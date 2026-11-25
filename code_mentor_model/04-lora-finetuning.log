@@ -1,0 +1,85 @@
+[{"stream_name":"stderr","time":8.189766056,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.189807453,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.189815388,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.189819945,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.82328996,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.82332835,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.82333445,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.823338951,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":11.208768467,"data":"/kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data/dataset_dict.json\n"}
+,{"stream_name":"stdout","time":11.208802698,"data":"/kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data/validation/state.json\n"}
+,{"stream_name":"stdout","time":11.208807969,"data":"/kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data/validation/dataset_info.json\n"}
+,{"stream_name":"stdout","time":11.208811783,"data":"/kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data/validation/data-00000-of-00001.arrow\n"}
+,{"stream_name":"stdout","time":11.208815456,"data":"/kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data/test/state.json\n"}
+,{"stream_name":"stdout","time":11.208819105,"data":"/kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data/test/dataset_info.json\n"}
+,{"stream_name":"stdout","time":11.208822726,"data":"/kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data/test/data-00000-of-00001.arrow\n"}
+,{"stream_name":"stdout","time":11.20882654,"data":"/kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data/train/state.json\n"}
+,{"stream_name":"stdout","time":11.208830026,"data":"/kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data/train/dataset_info.json\n"}
+,{"stream_name":"stdout","time":11.208833545,"data":"/kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data/train/data-00000-of-00001.arrow\n"}
+,{"stream_name":"stdout","time":17.232667901,"data":"Libraries installed successfully!\n"}
+,{"stream_name":"stdout","time":60.787560545,"data":"PyTorch version: 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":60.787601069,"data":"Training device: CUDA\n"}
+,{"stream_name":"stdout","time":60.787608465,"data":"GPU Device: Tesla T4\n"}
+,{"stream_name":"stdout","time":60.984801983,"data":"Loading dataset from: /kaggle/input/datasets/tanishtushid/code-mentor-ai/processed_code_mentor_data\n"}
+,{"stream_name":"stdout","time":61.628511607,"data":"Dataset loaded successfully!\n"}
+,{"stream_name":"stdout","time":61.628549126,"data":"DatasetDict({\n"}
+,{"stream_name":"stdout","time":61.628555507,"data":"    train: Dataset({\n"}
+,{"stream_name":"stdout","time":61.628560305,"data":"        features: ['messages'],\n"}
+,{"stream_name":"stdout","time":61.628565822,"data":"        num_rows: 100064\n"}
+,{"stream_name":"stdout","time":61.628570562,"data":"    })\n"}
+,{"stream_name":"stdout","time":61.62857492,"data":"    validation: Dataset({\n"}
+,{"stream_name":"stdout","time":61.628579504,"data":"        features: ['messages'],\n"}
+,{"stream_name":"stdout","time":61.628598382,"data":"        num_rows: 5559\n"}
+,{"stream_name":"stdout","time":61.628602399,"data":"    })\n"}
+,{"stream_name":"stdout","time":61.628611514,"data":"    test: Dataset({\n"}
+,{"stream_name":"stdout","time":61.628614608,"data":"        features: ['messages'],\n"}
+,{"stream_name":"stdout","time":61.628616847,"data":"        num_rows: 5560\n"}
+,{"stream_name":"stdout","time":61.628619171,"data":"    })\n"}
+,{"stream_name":"stdout","time":61.628621586,"data":"})\n"}
+,{"stream_name":"stderr","time":62.44445779,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":62.444511991,"data":"\n"}
+,{"stream_name":"stderr","time":62.444518244,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":65.651972041,"data":"Formatting dataset splits with chat template...\n"}
+,{"stream_name":"stdout","time":65.652035127,"data":" processing split: train\n"}
+,{"stream_name":"stdout","time":82.408336482,"data":" processing split: validation\n"}
+,{"stream_name":"stdout","time":85.414803641,"data":" processing split: test\n"}
+,{"stream_name":"stdout","time":87.925990767,"data":"Done\n"}
+,{"stream_name":"stdout","time":87.926034493,"data":"\n"}
+,{"stream_name":"stdout","time":87.926040162,"data":"Sample formatted text (train[0]):\n"}
+,{"stream_name":"stdout","time":87.926044264,"data":"\u003c|im_start|\u003esystem\n"}
+,{"stream_name":"stdout","time":87.926048898,"data":"You are Code Mentor AI, an expert software engineer and programming tutor. Your goal is to help users write clean code, explain complex algorithms step-by-step, and debug errors thoroughly.\u003c|im_end|\u003e\n"}
+,{"stream_name":"stdout","time":87.926055545,"data":"\u003c|im_start|\u003euser\n"}
+,{"stream_name":"stdout","time":87.926060585,"data":"change the following snippet to php:\n"}
+,{"stream_name":"stdout","time":87.926064667,"data":"def odd_count_elements(list1, list2):\n"}
+,{"stream_name":"stdout","time":87.926148727,"data":"    counts = {}\n"}
+,{"stream_name":"stdout","time":87.926154075,"data":"    for i in list1 + list2:\n"}
+,{"stream_name":"stdout","time":87.926158228,"data":"        if i in counts:\n"}
+,{"stream_name":"stdout","time":87.9261617,"data":"            counts[i] += 1\n"}
+,{"stream_name":"stdout","time":87.926165508,"data":"        else:\n"}
+,{"stream_name":"stdout","time":87.926169235,"data":"            counts[i] = 1\n"}
+,{"stream_name":"stdout","time":87.92617327,"data":"\n"}
+,{"stream_name":"stdout","time":87.926177288,"data":"    odds = [i for i in counts if counts[i] % 2 != 0]\n"}
+,{"stream_name":"stdout","time":87.926181408,"data":"\n"}
+,{"stream_name":"stdout","time":88.125096522,"data":"Configuring 4-bit quantization for Qwen/Qwen2.5-0.5B-Instruct...\n"}
+,{"stream_name":"stderr","time":88.43958489,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":88.439606691,"data":"\n"}
+,{"stream_name":"stderr","time":88.439611134,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stdout","time":98.443537563,"data":"Base model loaded in float16 and prepared for QLoRA successfully!\n"}
+,{"stream_name":"stdout","time":98.463304167,"data":"PEFT LoRA configuration created successfully!\n"}
+,{"stream_name":"stdout","time":484.822945073,"data":"SFTTrainer initialized successfully with T4-safe precision settings!\n"}
+,{"stream_name":"stderr","time":485.208212008,"data":"[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None}.\n"}
+,{"stream_name":"stderr","time":485.20824745,"data":"\n"}
+,{"stream_name":"stderr","time":485.208251282,"data":"[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None}.\n"}
+,{"stream_name":"stdout","time":485.209111354,"data":"Starting QLoRA fine-tuning for Code Mentor AI...\n"}
+,{"stream_name":"stdout","time":15928.848225522,"data":"Fine-tuning completed successfully!\n"}
+,{"stream_name":"stdout","time":15929.047506353,"data":"Saving fine-tuned LoRA adapter to /kaggle/working/code_mentor_lora_model...\n"}
+,{"stream_name":"stdout","time":15929.554287693,"data":"LoRA adapter and tokenizer saved successfully!\n"}
+,{"stream_name":"stderr","time":15935.158603137,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":15935.158635028,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":15935.331026617,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":15935.331051405,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":15936.105914608,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":15936.230113059,"data":"[NbConvertApp] Writing 264588 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":15938.724489421,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":15939.292735504,"data":"[NbConvertApp] Writing 501234 bytes to __results__.html\n"}
+]

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090b12" />
+    <title>Code Mentor AI</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app-frame">
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m8.5 7-5 5 5 5M15.5 7l5 5-5 5M14 4l-4 16"/></svg>
+          </div>
+          <div>
+            <strong>Code Mentor</strong>
+          </div>
+        </div>
+
+        <nav class="main-nav">
+          <p class="nav-label">Workspace</p>
+          <button class="nav-item active" data-view="chat" type="button">
+            <svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+            <span>Chat</span>
+          </button>
+          <button class="nav-item" data-view="generate" type="button">
+            <svg viewBox="0 0 24 24"><path d="m8.5 7-5 5 5 5M15.5 7l5 5-5 5M14 4l-4 16"/></svg>
+            <span>Generate</span>
+          </button>
+          <button class="nav-item" data-view="explain" type="button">
+            <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V5H6.5A2.5 2.5 0 0 0 4 7.5zM4 7.5v12"/></svg>
+            <span>Explain</span>
+          </button>
+          <button class="nav-item" data-view="debug" type="button">
+            <svg viewBox="0 0 24 24"><path d="M12 20v-9M8 4l4 7 4-7M5 11H2M22 11h-3M5 18H2M22 18h-3M7 11a5 5 0 0 1 10 0v7H7z"/></svg>
+            <span>Debug</span>
+          </button>
+          <button class="nav-item" data-view="optimize" type="button">
+            <svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+            <span>Optimize</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="status-card">
+            <div class="status-dot" id="statusDot"></div>
+            <div>
+              <span id="statusLabel">Checking model</span>
+              <small id="statusDetail">Connecting...</small>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <button class="mobile-menu" id="menuButton" type="button" aria-label="Open navigation">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <div class="page-heading">
+            <span class="eyebrow">CODE MENTOR</span>
+            <h1 id="pageTitle">Programming Chat</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button" id="clearButton" type="button" title="Clear workspace" aria-label="Clear workspace">
+              <svg viewBox="0 0 24 24"><path d="M3 6h18M8 6V3h8v3M19 6l-1 15H6L5 6M10 10v7M14 10v7"/></svg>
+            </button>
+          </div>
+        </header>
+
+        <section class="content" id="content">
+          <div class="view active" id="chatView">
+            <div class="chat-area" id="chatMessages">
+              <div class="welcome-state">
+                <h2>What would you like to learn?</h2>
+                <p>Ask a programming question or choose a starting point.</p>
+                <div class="prompt-grid">
+                  <button type="button" data-prompt="Explain recursion with a simple Python example">Explain recursion</button>
+                  <button type="button" data-prompt="How should I design a REST API for a todo application?">Design a REST API</button>
+                  <button type="button" data-prompt="What is the difference between a stack and a queue?">Compare data structures</button>
+                </div>
+              </div>
+            </div>
+            <form class="chat-composer" id="chatForm">
+              <textarea id="chatInput" rows="1" maxlength="10000" placeholder="Ask Code Mentor anything..." aria-label="Chat message"></textarea>
+              <button class="send-button" type="submit" aria-label="Send message">
+                <svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4zM22 2 11 13"/></svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="view" id="toolView">
+            <div class="tool-layout">
+              <section class="input-panel">
+                <div class="panel-heading">
+                  <p class="eyebrow" id="toolEyebrow">CODE GENERATION</p>
+                  <h2 id="toolTitle">Generate code</h2>
+                </div>
+                <form id="toolForm">
+                  <div class="field-grid" id="languageFields">
+                    <label class="field">
+                      <span>Programming language</span>
+                      <input id="languageInput" type="text" value="Python" maxlength="64" />
+                    </label>
+                  </div>
+
+                  <label class="field" id="primaryField">
+                    <span id="primaryLabel">Problem description</span>
+                    <textarea id="primaryInput" rows="9" maxlength="12000" placeholder="Describe what you want to build..."></textarea>
+                  </label>
+
+                  <label class="field" id="secondaryField">
+                    <span id="secondaryLabel">Additional instructions</span>
+                    <textarea id="secondaryInput" rows="3" maxlength="4000" placeholder="Optional requirements or constraints"></textarea>
+                  </label>
+
+                  <label class="field level-field" id="levelField" hidden>
+                    <span>Explanation level</span>
+                    <select id="levelInput">
+                      <option value="beginner">Beginner</option>
+                      <option value="intermediate">Intermediate</option>
+                      <option value="advanced">Advanced</option>
+                    </select>
+                  </label>
+
+                  <button class="primary-button" id="submitButton" type="submit">
+                    <span>Generate solution</span>
+                    <svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+                  </button>
+                </form>
+              </section>
+
+              <section class="result-panel" id="resultPanel">
+                <div class="empty-result">
+                  <h3>Ready when you are</h3>
+                  <p id="emptyMessage">Add your code or question to begin.</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    </div>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

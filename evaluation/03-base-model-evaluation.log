@@ -1,0 +1,168 @@
+[{"stream_name":"stderr","time":6.567124657,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.567180071,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.567187414,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.567191564,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.15929676,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.159345583,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.159350773,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.159355152,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":10.123045855,"data":"Requirement already satisfied: transformers in /usr/local/lib/python3.13/dist-packages (5.16.1)\r\n"}
+,{"stream_name":"stdout","time":10.123109085,"data":"Requirement already satisfied: torch in /usr/local/lib/python3.13/dist-packages (2.11.0+cu128)\r\n"}
+,{"stream_name":"stdout","time":10.123116283,"data":"Requirement already satisfied: accelerate in /usr/local/lib/python3.13/dist-packages (1.14.0)\r\n"}
+,{"stream_name":"stdout","time":10.174298026,"data":"Requirement already satisfied: huggingface-hub\u003c2.0,\u003e=1.5.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (1.29.0)\r\n"}
+,{"stream_name":"stdout","time":10.174326584,"data":"Requirement already satisfied: numpy\u003e=1.17 in /usr/local/lib/python3.13/dist-packages (from transformers) (2.1.3)\r\n"}
+,{"stream_name":"stdout","time":10.174332501,"data":"Requirement already satisfied: packaging\u003e=20.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (26.3)\r\n"}
+,{"stream_name":"stdout","time":10.174337337,"data":"Requirement already satisfied: pyyaml\u003e=5.1 in /usr/local/lib/python3.13/dist-packages (from transformers) (6.0.3)\r\n"}
+,{"stream_name":"stdout","time":10.174341555,"data":"Requirement already satisfied: regex\u003e=2025.10.22 in /usr/local/lib/python3.13/dist-packages (from transformers) (2025.11.3)\r\n"}
+,{"stream_name":"stdout","time":10.17434553,"data":"Requirement already satisfied: tokenizers\u003c0.24.0,\u003e=0.23.1 in /usr/local/lib/python3.13/dist-packages (from transformers) (0.23.1)\r\n"}
+,{"stream_name":"stdout","time":10.174349388,"data":"Requirement already satisfied: typer in /usr/local/lib/python3.13/dist-packages (from transformers) (0.27.2)\r\n"}
+,{"stream_name":"stdout","time":10.174353594,"data":"Requirement already satisfied: safetensors\u003e=0.8.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (0.8.0)\r\n"}
+,{"stream_name":"stdout","time":10.174358179,"data":"Requirement already satisfied: tqdm\u003e=4.60 in /usr/local/lib/python3.13/dist-packages (from transformers) (4.67.3)\r\n"}
+,{"stream_name":"stdout","time":10.174362243,"data":"Requirement already satisfied: filelock in /usr/local/lib/python3.13/dist-packages (from torch) (3.32.5)\r\n"}
+,{"stream_name":"stdout","time":10.174367017,"data":"Requirement already satisfied: typing-extensions\u003e=4.10.0 in /usr/local/lib/python3.13/dist-packages (from torch) (4.16.0)\r\n"}
+,{"stream_name":"stdout","time":10.174371302,"data":"Requirement already satisfied: setuptools\u003c82 in /usr/local/lib/python3.13/dist-packages (from torch) (81.0.0)\r\n"}
+,{"stream_name":"stdout","time":10.174375246,"data":"Requirement already satisfied: sympy\u003e=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch) (1.14.0)\r\n"}
+,{"stream_name":"stdout","time":10.174390322,"data":"Requirement already satisfied: networkx\u003e=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch) (3.6.1)\r\n"}
+,{"stream_name":"stdout","time":10.174394719,"data":"Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch) (3.1.6)\r\n"}
+,{"stream_name":"stdout","time":10.174398844,"data":"Requirement already satisfied: fsspec\u003e=0.8.5 in /usr/local/lib/python3.13/dist-packages (from torch) (2025.12.0)\r\n"}
+,{"stream_name":"stdout","time":10.174404674,"data":"Requirement already satisfied: cuda-toolkit==12.8.1 in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (12.8.1)\r\n"}
+,{"stream_name":"stdout","time":10.174411,"data":"Requirement already satisfied: cuda-bindings\u003c13,\u003e=12.9.4 in /usr/local/lib/python3.13/dist-packages (from torch) (12.9.7)\r\n"}
+,{"stream_name":"stdout","time":10.174415358,"data":"Requirement already satisfied: nvidia-cudnn-cu12==9.19.0.56 in /usr/local/lib/python3.13/dist-packages (from torch) (9.19.0.56)\r\n"}
+,{"stream_name":"stdout","time":10.174419062,"data":"Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.13/dist-packages (from torch) (0.7.1)\r\n"}
+,{"stream_name":"stdout","time":10.174422969,"data":"Requirement already satisfied: nvidia-nccl-cu12==2.28.9 in /usr/local/lib/python3.13/dist-packages (from torch) (2.28.9)\r\n"}
+,{"stream_name":"stdout","time":10.174427378,"data":"Requirement already satisfied: nvidia-nvshmem-cu12==3.4.5 in /usr/local/lib/python3.13/dist-packages (from torch) (3.4.5)\r\n"}
+,{"stream_name":"stdout","time":10.174431042,"data":"Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.13/dist-packages (from torch) (3.6.0)\r\n"}
+,{"stream_name":"stdout","time":10.225151239,"data":"Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (12.8.4.1)\r\n"}
+,{"stream_name":"stdout","time":10.225177523,"data":"Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (12.8.90)\r\n"}
+,{"stream_name":"stdout","time":10.225183924,"data":"Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (11.3.3.83)\r\n"}
+,{"stream_name":"stdout","time":10.225189336,"data":"Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (1.13.1.3)\r\n"}
+,{"stream_name":"stdout","time":10.225193956,"data":"Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (12.8.90)\r\n"}
+,{"stream_name":"stdout","time":10.225198311,"data":"Requirement already satisfied: nvidia-curand-cu12==10.3.9.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (10.3.9.90)\r\n"}
+,{"stream_name":"stdout","time":10.225210645,"data":"Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (11.7.3.90)\r\n"}
+,{"stream_name":"stdout","time":10.225215985,"data":"Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (12.5.8.93)\r\n"}
+,{"stream_name":"stdout","time":10.225220285,"data":"Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (12.8.93)\r\n"}
+,{"stream_name":"stdout","time":10.225224575,"data":"Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (12.8.93)\r\n"}
+,{"stream_name":"stdout","time":10.225229,"data":"Requirement already satisfied: nvidia-nvtx-cu12==12.8.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"-\u003etorch) (12.8.90)\r\n"}
+,{"stream_name":"stdout","time":10.275709302,"data":"Requirement already satisfied: psutil in /usr/local/lib/python3.13/dist-packages (from accelerate) (5.9.5)\r\n"}
+,{"stream_name":"stdout","time":10.275728165,"data":"Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.13/dist-packages (from cuda-bindings\u003c13,\u003e=12.9.4-\u003etorch) (1.8.0)\r\n"}
+,{"stream_name":"stdout","time":10.27573307,"data":"Requirement already satisfied: click\u003c9.0.0,\u003e=8.4.2 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub\u003c2.0,\u003e=1.5.0-\u003etransformers) (8.5.0)\r\n"}
+,{"stream_name":"stdout","time":10.275738594,"data":"Requirement already satisfied: hf-xet\u003c2.0.0,\u003e=1.5.2 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub\u003c2.0,\u003e=1.5.0-\u003etransformers) (1.6.0)\r\n"}
+,{"stream_name":"stdout","time":10.275743521,"data":"Requirement already satisfied: httpx\u003c1,\u003e=0.23.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub\u003c2.0,\u003e=1.5.0-\u003etransformers) (0.28.1)\r\n"}
+,{"stream_name":"stdout","time":10.32621695,"data":"Requirement already satisfied: mpmath\u003c1.4,\u003e=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy\u003e=1.13.3-\u003etorch) (1.3.0)\r\n"}
+,{"stream_name":"stdout","time":10.326238824,"data":"Requirement already satisfied: MarkupSafe\u003e=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2-\u003etorch) (3.0.3)\r\n"}
+,{"stream_name":"stdout","time":10.326245727,"data":"Requirement already satisfied: shellingham\u003e=1.3.0 in /usr/local/lib/python3.13/dist-packages (from typer-\u003etransformers) (1.5.4)\r\n"}
+,{"stream_name":"stdout","time":10.377156403,"data":"Requirement already satisfied: rich\u003e=13.8.0 in /usr/local/lib/python3.13/dist-packages (from typer-\u003etransformers) (13.9.4)\r\n"}
+,{"stream_name":"stdout","time":10.377187221,"data":"Requirement already satisfied: annotated-doc\u003e=0.0.2 in /usr/local/lib/python3.13/dist-packages (from typer-\u003etransformers) (0.0.5)\r\n"}
+,{"stream_name":"stdout","time":10.377193244,"data":"Requirement already satisfied: anyio in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface-hub\u003c2.0,\u003e=1.5.0-\u003etransformers) (4.14.2)\r\n"}
+,{"stream_name":"stdout","time":10.377209045,"data":"Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface-hub\u003c2.0,\u003e=1.5.0-\u003etransformers) (2026.7.22)\r\n"}
+,{"stream_name":"stdout","time":10.377213455,"data":"Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface-hub\u003c2.0,\u003e=1.5.0-\u003etransformers) (1.0.9)\r\n"}
+,{"stream_name":"stdout","time":10.377217387,"data":"Requirement already satisfied: idna in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface-hub\u003c2.0,\u003e=1.5.0-\u003etransformers) (3.19)\r\n"}
+,{"stream_name":"stdout","time":10.377221253,"data":"Requirement already satisfied: h11\u003e=0.16 in /usr/local/lib/python3.13/dist-packages (from httpcore==1.*-\u003ehttpx\u003c1,\u003e=0.23.0-\u003ehuggingface-hub\u003c2.0,\u003e=1.5.0-\u003etransformers) (0.16.0)\r\n"}
+,{"stream_name":"stdout","time":10.377225529,"data":"Requirement already satisfied: markdown-it-py\u003e=2.2.0 in /usr/local/lib/python3.13/dist-packages (from rich\u003e=13.8.0-\u003etyper-\u003etransformers) (4.2.0)\r\n"}
+,{"stream_name":"stdout","time":10.377229321,"data":"Requirement already satisfied: pygments\u003c3.0.0,\u003e=2.13.0 in /usr/local/lib/python3.13/dist-packages (from rich\u003e=13.8.0-\u003etyper-\u003etransformers) (2.21.0)\r\n"}
+,{"stream_name":"stdout","time":10.377233275,"data":"Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.13/dist-packages (from markdown-it-py\u003e=2.2.0-\u003erich\u003e=13.8.0-\u003etyper-\u003etransformers) (0.1.2)\r\n"}
+,{"stream_name":"stdout","time":35.440170321,"data":"Libraries imported successfully!\n"}
+,{"stream_name":"stdout","time":35.440207781,"data":"PyTorch Version: 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":35.726124358,"data":"Using device: CUDA\n"}
+,{"stream_name":"stdout","time":35.866647294,"data":"Loading tokenizer for Qwen/Qwen2.5-0.5B-Instruct...\n"}
+,{"stream_name":"stderr","time":35.891254819,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":35.891278444,"data":"\n"}
+,{"stream_name":"stderr","time":35.891283737,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":36.695711201,"data":"Tokenizer loaded successfully!\n"}
+,{"stream_name":"stderr","time":36.756796945,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":36.756825339,"data":"\n"}
+,{"stream_name":"stderr","time":36.756830669,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stdout","time":36.899533702,"data":"Loading base model Qwen/Qwen2.5-0.5B-Instruct...\n"}
+,{"stream_name":"stdout","time":46.213050862,"data":"Base model loaded successfully!\n"}
+,{"stream_name":"stdout","time":46.235537556,"data":"Prepared 5 evaluation test cases across code generation, explanation, and debugging.\n"}
+,{"stream_name":"stdout","time":46.257312162,"data":"Generation function defined successfully!\n"}
+,{"stream_name":"stdout","time":46.413565958,"data":"Running baseline evaluation on base model...\n"}
+,{"stream_name":"stdout","time":46.413597433,"data":"\n"}
+,{"stream_name":"stdout","time":46.41360141,"data":"Evaluating [gen_01] - Code Generation...\n"}
+,{"stream_name":"stdout","time":71.499610433,"data":"Evaluating [gen_02] - Code Generation...\n"}
+,{"stream_name":"stdout","time":93.224952398,"data":"Evaluating [exp_01] - Code Explanation...\n"}
+,{"stream_name":"stdout","time":116.38783459,"data":"Evaluating [exp_02] - Code Explanation...\n"}
+,{"stream_name":"stdout","time":139.583264882,"data":"Evaluating [bug_01] - Debugging...\n"}
+,{"stream_name":"stdout","time":156.159722631,"data":"\n"}
+,{"stream_name":"stdout","time":156.1597665,"data":"Baseline generation completed for all test cases!\n"}
+,{"stream_name":"stdout","time":156.180383766,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":156.180410148,"data":"Sample Inspection: Task ID -\u003e gen_01 (Code Generation)\n"}
+,{"stream_name":"stdout","time":156.180417,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":156.180422267,"data":"PROMPT:\n"}
+,{"stream_name":"stdout","time":156.180426942,"data":"Write a Python function using two pointers to check if a given string is a palindrome, ignoring non-alphanumeric characters.\n"}
+,{"stream_name":"stdout","time":156.180431763,"data":"\n"}
+,{"stream_name":"stdout","time":156.180436147,"data":"BASE MODEL RESPONSE:\n"}
+,{"stream_name":"stdout","time":156.180440918,"data":"To create a Python function that checks if a given string is a palindrome, ignoring non-alphanumeric characters, you can use the following approach:\n"}
+,{"stream_name":"stdout","time":156.180445589,"data":"\n"}
+,{"stream_name":"stdout","time":156.180449626,"data":"1. Convert the input string to lowercase.\n"}
+,{"stream_name":"stdout","time":156.180453784,"data":"2. Use two pointers to traverse the string from both ends towards the center.\n"}
+,{"stream_name":"stdout","time":156.180458026,"data":"3. Compare characters at these positions: left and right (or vice versa).\n"}
+,{"stream_name":"stdout","time":156.180462399,"data":"4. If all corresponding characters match, return `True`; otherwise, return `False`.\n"}
+,{"stream_name":"stdout","time":156.180468323,"data":"\n"}
+,{"stream_name":"stdout","time":156.180472351,"data":"Here's how you could implement this:\n"}
+,{"stream_name":"stdout","time":156.180476421,"data":"\n"}
+,{"stream_name":"stdout","time":156.180480368,"data":"```python\n"}
+,{"stream_name":"stdout","time":156.180484387,"data":"def is_palindrome(s):\n"}
+,{"stream_name":"stdout","time":156.180488468,"data":"    \"\"\"\n"}
+,{"stream_name":"stdout","time":156.180492549,"data":"    Check if the given string is a palindrome, ignoring non-alphanumeric characters.\n"}
+,{"stream_name":"stdout","time":156.180496876,"data":"\n"}
+,{"stream_name":"stdout","time":156.180518283,"data":"    :param s: The string to check.\n"}
+,{"stream_name":"stdout","time":156.180523144,"data":"    :return: True if the string is a palindrome, False otherwise.\n"}
+,{"stream_name":"stdout","time":156.180527727,"data":"    \"\"\"\n"}
+,{"stream_name":"stdout","time":156.180532298,"data":"    # Remove non-alphanumeric characters and convert to lowercase\n"}
+,{"stream_name":"stdout","time":156.180536557,"data":"    cleaned_s = ''.join(char.lower() for char in s if char.isalnum())\n"}
+,{"stream_name":"stdout","time":156.180540705,"data":"    \n"}
+,{"stream_name":"stdout","time":156.180544691,"data":"    # Initialize pointers\n"}
+,{"stream_name":"stdout","time":156.180548699,"data":"    left, right = 0, len(cleaned_s) - 1\n"}
+,{"stream_name":"stdout","time":156.180552883,"data":"    \n"}
+,{"stream_name":"stdout","time":156.180557491,"data":"    while left \u003c right:\n"}
+,{"stream_name":"stdout","time":156.180563403,"data":"        # Move the left pointer until it points to a character that does not match\n"}
+,{"stream_name":"stdout","time":156.180579062,"data":"        while left \u003c right and not cleaned_s[left].isalnum():\n"}
+,{"stream_name":"stdout","time":156.180583334,"data":"            left += 1\n"}
+,{"stream_name":"stdout","time":156.180587285,"data":"        # Move the right pointer until it points to a character that does not match\n"}
+,{"stream_name":"stdout","time":156.180591334,"data":"        while left \u003c right and not cleaned_s[right].isalnum():\n"}
+,{"stream_name":"stdout","time":156.180594829,"data":"            right -= 1\n"}
+,{"stream_name":"stdout","time":156.180598025,"data":"        \n"}
+,{"stream_name":"stdout","time":156.180601417,"data":"        # If characters do not match, the string is not a palindrome\n"}
+,{"stream_name":"stdout","time":156.180604892,"data":"        if cleaned_s[left] != cleaned_s[right]:\n"}
+,{"stream_name":"stdout","time":156.180608184,"data":"            return False\n"}
+,{"stream_name":"stdout","time":156.180611341,"data":"        \n"}
+,{"stream_name":"stdout","time":156.180614861,"data":"        # Move both pointers towards the center\n"}
+,{"stream_name":"stdout","time":156.180618321,"data":"        left += 1\n"}
+,{"stream_name":"stdout","time":156.180621453,"data":"        right -= 1\n"}
+,{"stream_name":"stdout","time":156.180625114,"data":"    \n"}
+,{"stream_name":"stdout","time":156.180629231,"data":"    return True\n"}
+,{"stream_name":"stdout","time":156.180632276,"data":"\n"}
+,{"stream_name":"stdout","time":156.180635204,"data":"# Example usage:\n"}
+,{"stream_name":"stdout","time":156.180638461,"data":"input_string = \"A man, a plan, a canal: Panama\"\n"}
+,{"stream_name":"stdout","time":156.18064187,"data":"print(is_palindrome(input_string))  # Output: True\n"}
+,{"stream_name":"stdout","time":156.180645213,"data":"\n"}
+,{"stream_name":"stdout","time":156.180648181,"data":"input_string = \"race a car\"\n"}
+,{"stream_name":"stdout","time":156.180653169,"data":"print(is_palindrome(input_string))  # Output: False\n"}
+,{"stream_name":"stdout","time":156.180657307,"data":"```\n"}
+,{"stream_name":"stdout","time":156.180661075,"data":"\n"}
+,{"stream_name":"stdout","time":156.180664075,"data":"### Explanation:\n"}
+,{"stream_name":"stdout","time":156.180667397,"data":"- **Cleaning the String**: We first remove any non-alphanumeric characters by converting each character to lowercase and then joining them back into a single string.\n"}
+,{"stream_name":"stdout","time":156.180671291,"data":"- **Two Pointers Approach**:\n"}
+,{"stream_name":"stdout","time":156.180674556,"data":"  - We initialize two pointers, one at the start (`left`) and one at the end (`right`), which will point to opposite ends of the string.\n"}
+,{"stream_name":"stdout","time":156.180678513,"data":"  - We iterate as long as the pointers don't cross each other or meet.\n"}
+,{"stream_name":"stdout","time":156.180682523,"data":"  - For each pair of characters, we compare them. If they don't match, we immediately return `False`.\n"}
+,{"stream_name":"stdout","time":156.180686399,"data":"  - If the characters\n"}
+,{"stream_name":"stdout","time":156.180689676,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":156.237340965,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":156.23737309,"data":"BASELINE PERFORMANCE METRICS SUMMARY\n"}
+,{"stream_name":"stdout","time":156.237378706,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":156.237382926,"data":"Average Generation Time: 21.97 seconds\n"}
+,{"stream_name":"stdout","time":156.23739742,"data":"Average Token Count: 476.6 tokens\n"}
+,{"stream_name":"stdout","time":156.237400972,"data":"Average Speed: 21.75 tokens/sec\n"}
+,{"stream_name":"stdout","time":156.237404779,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":156.263368666,"data":"Baseline results successfully saved to: /kaggle/working/base_model_baseline_results.csv\n"}
+,{"stream_name":"stderr","time":161.999232023,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":161.999259775,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":162.158359443,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":162.158403701,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":162.9099766,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":163.012832609,"data":"[NbConvertApp] Writing 145173 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":165.541736274,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":166.118267115,"data":"[NbConvertApp] Writing 409041 bytes to __results__.html\n"}
+]

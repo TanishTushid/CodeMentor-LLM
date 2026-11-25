@@ -1,0 +1,32 @@
+[project]
+name = "code-mentor-ai"
+version = "0.1.0"
+description = "A FastAPI coding mentor backed by a locally fine-tuned Qwen LoRA adapter"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "pydantic-settings>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "uvicorn[standard]>=0.30.0",
+]
+
+[project.optional-dependencies]
+model = [
+    "accelerate>=0.34.0",
+    "huggingface-hub>=0.26.0",
+    "peft>=0.13.0",
+    "protobuf>=5.29.0",
+    "torch>=2.2.0",
+    "transformers>=4.45.0,<5.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx2>=2.0.0",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["backend"]
+testpaths = ["backend/tests"]
